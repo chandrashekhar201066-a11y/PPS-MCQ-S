@@ -1,0 +1,246 @@
+<!doctype html>
+
+<html lang="te">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>C Language MCQ — 15 Questions</title>
+  <meta name="description" content="15 MCQs on C language. Participants enter name, take quiz, and send their score to the owner via email." />
+  <style>
+    :root{--card:#fff;--bg:#f3f6fb;--accent:#0b63d6}
+    body{font-family:system-ui,Roboto,Segoe UI,Helvetica,Arial;margin:0;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:28px}
+    .wrap{max-width:900px;width:100%;background:var(--card);padding:22px;border-radius:12px;box-shadow:0 10px 30px rgba(10,20,40,0.08)}
+    h1{margin:0 0 6px;font-size:1.4rem}
+    p.lead{color:#444;margin:6px 0 18px}
+    .q{margin:14px 0;padding:12px;border-radius:8px;border:1px solid #eef2f6}
+    .opts label{display:block;margin:6px 0;cursor:pointer}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;border:none;font-weight:600;cursor:pointer}
+    .small{font-size:0.9rem;color:#666}
+    footer{margin-top:16px;color:#666;font-size:0.9rem}
+    input[type=text]{padding:8px;border-radius:8px;border:1px solid #dfe7f2;width:100%;box-sizing:border-box}
+    .result{margin-top:12px;padding:12px;background:#f8fafc;border-radius:8px}
+    .controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    @media(max-width:600px){.controls{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>C Language — 15 MCQs</h1>
+    <p class="lead">మీ పేరు టైపు చేసి పరీక్ష మొదలుపెట్టి, పరీక్ష పూర్తయిన తరువాత మీ స్కోరు మాకు మెయిల్ ద్వారా పంపవచ్చు. డిఫాల్ట్ ఏడ్రస్: <code>owner@example.com</code> — దాన్ని మీ ఇమెయిల్‌తో మార్చండి (కోడ్ లో).</p><div>
+  <label>పేరు (Name):</label>
+  <input id="participantName" type="text" placeholder="మీ పేరు ఇక్కడ రాయండి" />
+</div>
+
+<form id="quizForm">
+
+  <!-- Question template: .q with data-answer attribute set to correct option letter -->
+
+  <div class="q" data-answer="B">
+    <strong>1. C language ను ఎవరు రూపొందించారు?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q1" value="A"> A) Dennis Ritchie and Ken Thompson</label>
+      <label><input type="radio" name="q1" value="B"> B) Dennis Ritchie</label>
+      <label><input type="radio" name="q1" value="C"> C) Bjarne Stroustrup</label>
+      <label><input type="radio" name="q1" value="D"> D) James Gosling</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="C">
+    <strong>2. C లో 'printf' function ఏ header లో ఉంటుంది?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q2" value="A"> A) stdlib.h</label>
+      <label><input type="radio" name="q2" value="B"> B) string.h</label>
+      <label><input type="radio" name="q2" value="C"> C) stdio.h</label>
+      <label><input type="radio" name="q2" value="D"> D) math.h</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="A">
+    <strong>3. C లో comments ఎలా ని రాస్తాం?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q3" value="A"> A) /* comment */ and // comment</label>
+      <label><input type="radio" name="q3" value="B"> B) <!-- comment --> only</label>
+      <label><input type="radio" name="q3" value="C"> C) /* comment only */</label>
+      <label><input type="radio" name="q3" value="D"> D) // not supported</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="D">
+    <strong>4. Which operator is used to get the address of a variable?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q4" value="A"> A) * (asterisk)</label>
+      <label><input type="radio" name="q4" value="B"> B) &&</label>
+      <label><input type="radio" name="q4" value="C"> C) -></label>
+      <label><input type="radio" name="q4" value="D"> D) & (ampersand)</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="B">
+    <strong>5. What is the size of an 'int' on a typical 32-bit system?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q5" value="A"> A) 1 byte</label>
+      <label><input type="radio" name="q5" value="B"> B) 4 bytes</label>
+      <label><input type="radio" name="q5" value="C"> C) 8 bytes</label>
+      <label><input type="radio" name="q5" value="D"> D) Depends on compiler only</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="A">
+    <strong>6. Which function is used to allocate memory dynamically?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q6" value="A"> A) malloc()</label>
+      <label><input type="radio" name="q6" value="B"> B) scanf()</label>
+      <label><input type="radio" name="q6" value="C"> C) fopen()</label>
+      <label><input type="radio" name="q6" value="D"> D) free()</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="C">
+    <strong>7. Which statement is used to exit a loop immediately?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q7" value="A"> A) continue</label>
+      <label><input type="radio" name="q7" value="B"> B) return</label>
+      <label><input type="radio" name="q7" value="C"> C) break</label>
+      <label><input type="radio" name="q7" value="D"> D) exit</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="B">
+    <strong>8. What does 'NULL' signify in C?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q8" value="A"> A) integer zero only</label>
+      <label><input type="radio" name="q8" value="B"> B) null pointer constant</label>
+      <label><input type="radio" name="q8" value="C"> C) empty string</label>
+      <label><input type="radio" name="q8" value="D"> D) undefined</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="D">
+    <strong>9. Which header contains 'malloc' prototype?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q9" value="A"> A) stdio.h</label>
+      <label><input type="radio" name="q9" value="B"> B) stdarg.h</label>
+      <label><input type="radio" name="q9" value="C"> C) string.h</label>
+      <label><input type="radio" name="q9" value="D"> D) stdlib.h</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="A">
+    <strong>10. Which format specifier is used for float in printf?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q10" value="A"> A) %f</label>
+      <label><input type="radio" name="q10" value="B"> B) %d</label>
+      <label><input type="radio" name="q10" value="C"> C) %c</label>
+      <label><input type="radio" name="q10" value="D"> D) %lf</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="C">
+    <strong>11. Which function is used to compare two strings?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q11" value="A"> A) strcpy()</label>
+      <label><input type="radio" name="q11" value="B"> B) strcat()</label>
+      <label><input type="radio" name="q11" value="C"> C) strcmp()</label>
+      <label><input type="radio" name="q11" value="D"> D) strlen()</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="B">
+    <strong>12. Which of these is a correct way to declare a constant in C?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q12" value="A"> A) constint x = 5;</label>
+      <label><input type="radio" name="q12" value="B"> B) const int x = 5;</label>
+      <label><input type="radio" name="q12" value="C"> C) #define int x 5</label>
+      <label><input type="radio" name="q12" value="D"> D) constant int x = 5;</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="D">
+    <strong>13. What will be the output of: printf("%d", 5/2); ?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q13" value="A"> A) 2.5</label>
+      <label><input type="radio" name="q13" value="B"> B) Compiler error</label>
+      <label><input type="radio" name="q13" value="C"> C) 0</label>
+      <label><input type="radio" name="q13" value="D"> D) 2</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="A">
+    <strong>14. Which keyword is used to define a macro?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q14" value="A"> A) #define</label>
+      <label><input type="radio" name="q14" value="B"> B) macro</label>
+      <label><input type="radio" name="q14" value="C"> C) define()</label>
+      <label><input type="radio" name="q14" value="D"> D) #macro</label>
+    </div>
+  </div>
+
+  <div class="q" data-answer="C">
+    <strong>15. Which header is required for using 'sizeof' operator?</strong>
+    <div class="opts">
+      <label><input type="radio" name="q15" value="A"> A) stdio.h</label>
+      <label><input type="radio" name="q15" value="B"> B) math.h</label>
+      <label><input type="radio" name="q15" value="C"> C) No header required</label>
+      <label><input type="radio" name="q15" value="D"> D) stdlib.h</label>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button type="button" class="btn" id="submitBtn">Submit & Calculate Score</button>
+    <button type="button" class="btn" id="emailBtn" style="background:#17a2b8">Send Score to Owner</button>
+    <button type="button" class="btn" id="resetBtn" style="background:#6c757d">Reset</button>
+  </div>
+
+</form>
+
+<div class="result" id="resultBox" style="display:none"></div>
+
+<footer>
+  <div class="small">అవగాహన: ఈ పేజీ client-side JS ఉపయోగిస్తుంది. ఇమెయిల్ పంపడానికి మీ సూచించిన ఇమెయిల్ address ను <code>ownerEmail</code>అని క్రింద కోడ్‌లో మార్చండి.</div>
+</footer>
+
+  </div>  <script>
+    // EDIT THIS: change to your real email where you want to receive participant scores
+    const ownerEmail = 'owner@example.com';
+
+    function calculateScore(){
+      const questions = document.querySelectorAll('.q');
+      let score = 0;
+      questions.forEach((q,i)=>{
+        const ans = q.getAttribute('data-answer');
+        const name = 'q'+(i+1);
+        const sel = document.querySelector('input[name="'+name+'"]:checked');
+        if(sel && sel.value === ans) score++;
+      });
+      return score;
+    }
+
+    const resultBox = document.getElementById('resultBox');
+    document.getElementById('submitBtn').addEventListener('click',()=>{
+      const name = document.getElementById('participantName').value.trim();
+      if(!name){alert('దయచేసి మీ పేరు టైపు చేయండి');return}
+      const score = calculateScore();
+      resultBox.style.display='block';
+      resultBox.innerHTML = `<strong>${name}</strong>, మీరు ${score} / 15 సాధించారు.`;
+    });
+
+    document.getElementById('emailBtn').addEventListener('click',()=>{
+      const name = document.getElementById('participantName').value.trim();
+      if(!name){alert('దయచేసి మీ పేరు టైపు చేయండి');return}
+      const score = calculateScore();
+      // Prepare mailto link
+      const subject = encodeURIComponent('Quiz Result: '+name+' — C MCQ Quiz');
+      const body = encodeURIComponent('Participant: '+name+'\nScore: '+score+' / 15\n\nQuiz: C Language 15 MCQs');
+      const mailto = `mailto:${ownerEmail}?subject=${subject}&body=${body}`;
+      // open mail client
+      window.location.href = mailto;
+    });
+
+    document.getElementById('resetBtn').addEventListener('click',()=>{
+      document.getElementById('quizForm').reset();
+      document.getElementById('participantName').value='';
+      resultBox.style.display='none';
+      resultBox.innerHTML='';
+    });
+  </script></body>
+</html>
